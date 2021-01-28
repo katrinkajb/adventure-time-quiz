@@ -1,5 +1,22 @@
-// import functions and grab DOM elements
+const form = document.querySelector('form');
 
-// initialize state
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-// set event listeners to update state and DOM
+    const formData = new FormData(form);
+    const user = {
+        name: formData.get('name'),
+        descriptor: formData.get('descriptor'),
+        completed: {},
+    };
+// Figure out alert later. 
+    // if (!user.descriptor || !user.name) {
+    //     alert('Unacceptable! Please fill out all fields');
+    // } else {
+    const userString = JSON.stringify(user);
+
+    localStorage.setItem('USER', userString);
+
+    window.location = './map/map.index.html';
+    // }
+});
