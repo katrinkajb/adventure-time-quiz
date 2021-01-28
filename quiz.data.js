@@ -1,3 +1,4 @@
+
 const colorQ = {
     id: 'color',
     title: 'Ice Kingdom',
@@ -76,7 +77,7 @@ const personalityQ = {
 //         top: '89%',
 //         left: '44%'
 //     },
-//     image: '../assets/ice-kingdom.png',
+//     image: '../assets/fire-kingdom.png',
 //     description: `
 //         
 //     `,
@@ -111,7 +112,7 @@ const personalityQ = {
 //         top: '89%',
 //         left: '44%'
 //     },
-//     image: '../assets/ice-kingdom.png',
+//     image: '../assets/lumpy-space.jpg',
 //     description: `
 //         
 //     `,
@@ -147,7 +148,7 @@ const personalityQ = {
 //         top: '89%',
 //         left: '44%'
 //     },
-//     image: '../assets/ice-kingdom.png',
+//     image: '../assets/candy-kingdom.png',
 //     description: `
 //         
 //     `,
@@ -176,13 +177,13 @@ const personalityQ = {
 
 // const idealDayQ = {
 //     id: 'idealDay',
-//     title: 'Ice Kingdom',
+//     title: 'Castle Lemongrab',
 //     // Update this
 //     map: {
 //         top: '89%',
 //         left: '44%'
 //     },
-//     image: '../assets/ice-kingdom.png',
+//     image: '../assets/castle-lemongrab.png',
 //     description: `
 //         
 //     `,
@@ -211,7 +212,7 @@ const personalityQ = {
 
 const challenges = [
     colorQ, 
-    personalityQ
+    personalityQ,
     // likesQ
     // hobbyQ
     // dislikesQ

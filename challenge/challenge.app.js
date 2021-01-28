@@ -1,5 +1,18 @@
-// import functions and grab DOM elements
+// import { challenges } from '../quiz.data.js';
 
-// initialize state
+// const form = document.querySelector('form');
 
-// set event listeners to update state and DOM
+// const img = document.getElementById('challenge-img');
+
+// const challengeImg = document.getElementById('img');
+
+
+// export function findById(array, id) {
+//     for (let item of array) {
+//         if (item.id === id) {
+//             return item;
+//         }
+//     }
+// }
+
+// const challengeId = 
