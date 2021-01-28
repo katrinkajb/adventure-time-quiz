@@ -140,8 +140,43 @@ const personalityQ = {
 // };
 
 
-// const dislikesQ = {
-//     id: 'dislikes',
+const dislikesQ = {
+    id: 'castleLemongrab',
+    title: 'Castle Lemongrab',
+    // Update this
+    map: {
+        top: '89%',
+        left: '44%'
+    },
+    image: '../assets/castle-lemongrab.png',
+    description: `
+        Lemongrab approaches you and demands to know what you hate. What do you find the most Unacceptable?
+    `,
+    choices: [{
+        id: 'sunlight',
+        description: 'Too much sunlight!',
+        marceline: 1,
+    }, {
+        id: 'thieves',
+        description: 'Nasty thieves stealing all of my stuff!',
+        treeTrunks: 1,
+    }, {
+        id: 'hurting',
+        description: 'People hurting my friends!',
+        bubblegum: 1,
+    }, {
+        id: 'liquids',
+        description: 'Too much liquid!',
+        bmo: 1,
+    }, {
+        id: 'parents',
+        description: 'Being told what to do by my parents!',
+        lsp: 1,
+    }]
+};
+
+// const idealDayQ = {
+//     id: 'idealDay',
 //     title: 'Candy Kingdom',
 //     // Update this
 //     map: {
@@ -175,47 +210,12 @@ const personalityQ = {
 //     }]
 // };
 
-// const idealDayQ = {
-//     id: 'idealDay',
-//     title: 'Castle Lemongrab',
-//     // Update this
-//     map: {
-//         top: '89%',
-//         left: '44%'
-//     },
-//     image: '../assets/castle-lemongrab.png',
-//     description: `
-//         
-//     `,
-//     choices: [{
-//         id: '',
-//         description: '',
-//         lsp: 1,
-//     }, {
-//         id: '',
-//         description: '',
-//         bmo: 1,
-//     }, {
-//         id: '',
-//         description: '',
-//         treeTrunks: 1,
-//     }, {
-//         id: '',
-//         description: '',
-//         bubblegum: 1,
-//     }, {
-//         id: '',
-//         description: '',
-//         marceline: 1,
-//     }]
-// };
-
 const challenges = [
     colorQ, 
     personalityQ,
     // likesQ
     // hobbyQ
-    // dislikesQ
+    dislikesQ
     // idealDayQ
 ];
 

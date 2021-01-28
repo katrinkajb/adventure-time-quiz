@@ -4,6 +4,7 @@ const ul = document.getElementById('map-list');
     
 const user = JSON.parse(localStorage.getItem('USER'));
 
+// Check for completion
 let completedAllChallenges = true;
 
 for (let challenge of challenges) {
@@ -11,7 +12,7 @@ for (let challenge of challenges) {
         completedAllChallenges = false;
     }
 }
-
+// If all quests completed, redirect to results
 if (completedAllChallenges) {
     window.location = '../results/index.html';
 }
@@ -24,6 +25,8 @@ for (let challenge of challenges) {
     a.textContent = challenge.title;
     a.href = `../challenge/?id=${challenge.id}`;
     
+// If they have completed the challenge, disable link and add strikethrough
+
     li.append(a);
     ul.append(li);
 }
