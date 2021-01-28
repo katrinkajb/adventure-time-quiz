@@ -22,7 +22,7 @@ for (let challenge of challenges) {
 
     const a = document.createElement('a');
     a.textContent = challenge.title;
-    a.href = `../quiz.data/?id=${challenge.id}`;
+    a.href = `../challenge/?id=${challenge.id}`;
     
     li.append(a);
     ul.append(li);

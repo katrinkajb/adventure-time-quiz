@@ -1,6 +1,6 @@
 
 const colorQ = {
-    id: 'color',
+    id: 'ice-kingdom',
     title: 'Ice Kingdom',
     // Update this
     map: {
@@ -35,7 +35,7 @@ const colorQ = {
 };
 
 const personalityQ = {
-    id: 'personality',
+    id: 'treehouse',
     title: "Finn and Jake's Treehouse",
     // Update this
     map: {
