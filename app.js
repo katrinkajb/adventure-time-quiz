@@ -17,6 +17,6 @@ form.addEventListener('submit', (e) => {
 
     localStorage.setItem('USER', userString);
 
-    window.location = './map/map.index.html';
+    window.location = './map/index.html';
     // }
 });
