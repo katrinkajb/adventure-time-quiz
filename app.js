@@ -9,14 +9,14 @@ form.addEventListener('submit', (e) => {
         descriptor: formData.get('descriptor'),
         completed: {},
     };
-// Figure out alert later. 
-    // if (!user.descriptor || !user.name) {
-    //     alert('Unacceptable! Please fill out all fields');
-    // } else {
+// Figure out alert later 
+    // if (user.value) {
     const userString = JSON.stringify(user);
 
     localStorage.setItem('USER', userString);
 
     window.location = './map/index.html';
+    // } else {
+    //     alert('Unacceptable! Please fill out all fields');
     // }
 });
