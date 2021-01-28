@@ -4,8 +4,8 @@ const colorQ = {
     title: 'Ice Kingdom',
     // Update this
     map: {
-        top: '89%',
-        left: '44%'
+        top: '10%',
+        left: '70%'
     },
     image: '../assets/ice-kingdom.png',
     description: `Filler desc about needing scarves in the Ice Kingdom. Which color scarf do you choose?`,
@@ -66,7 +66,7 @@ const personalityQ = {
 };
 
 const likesQ = {
-    id: 'likes',
+    id: 'fire-kingdom',
     title: 'Fire Kingdom',
     // Update this
     map: {
@@ -91,7 +91,7 @@ const likesQ = {
         lsp: 1,
     }, {
         id: 'candy',
-        description: 'What types of candy she thinks are best',
+        description: 'What types of candy are the best.',
         bubblegum: 1,
     }, {
         id: 'video games',

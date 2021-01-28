@@ -125,11 +125,18 @@ footer {
 
   #map-pic {
       z-index: 0;
-      width: auto;
-      height:auto
+      width: 600px;
+      height: 600px;
+      position: relative;
   }
+
+.challenge-link {
+    position: absolute;
+}
 
   /* #map-container {
       background-image: url('../assets/ooo-map.jpg');
       position: relative;
+    height: 100%;
+    width: 100%;
   } */

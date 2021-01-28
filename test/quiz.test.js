@@ -13,13 +13,7 @@ const testUser = {
 
 // getWinner test
 test('getWinner should take in a user and return the name of the highest scoring item in an array', (expect) => {
-    // const namesArray = [
-    //     'lsp',
-    //     'bmo',
-    //     'treeTrunks',
-    //     'bubblegum',
-    //     'marceline'
-    // ];
+
     //Arrange
     // Set up your arguments and expectations
     const expected = 'marceline';
