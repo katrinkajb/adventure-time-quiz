@@ -16,17 +16,17 @@
         - Use percentages (style tag) to put challenge links on different parts of the map
 
 # Plan
-    # Home Page (root dir)
-        - html
-            - Create form for user data (inside a form tag)
-            - each q inside a label tag
-            - radio buttons for user info (type: radio, name: whatever, value: things to map back )
-            - submit button
-        - js
-            - grab form (query selector) and make var
-            - event listener on button. When clicked:
-                - store user data in local storage
-                - redirect to map page
+<!-- # Home Page (root dir)
+    - html
+        - Create form for user data (inside a form tag)
+        - each q inside a label tag
+        - radio buttons for user info (type: radio, name: whatever, value: things to map back )
+        - submit button
+    - js
+        - grab form (query selector) and make var
+        - event listener on button. When clicked:
+            - store user data in local storage
+            - redirect to map page -->
         - quiz data
             - write up of question challenges and options
     # Map Page (map of Ooo)

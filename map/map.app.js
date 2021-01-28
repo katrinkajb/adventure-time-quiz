@@ -1,5 +1,11 @@
-// import functions and grab DOM elements
+import { quizData } from '../quiz.data.js';
 
-// initialize state
+const ul = document.getElementById('map-list');
 
-// set event listeners to update state and DOM
+for (quiz of quizData) {
+
+// create li's here
+
+
+
+}
