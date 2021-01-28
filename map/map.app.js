@@ -1,4 +1,4 @@
-import { challenges } from '../quiz.data.js';
+import challenges from '../quiz.data.js';
 
 const ul = document.getElementById('map-list');
     

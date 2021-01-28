@@ -3,8 +3,7 @@ body {
     --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1);
+    --color4: hsla(170, 28%, 95%, 1);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -24,7 +23,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: var(--color4);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -53,7 +52,6 @@ footer {
     box-shadow: var(--shadow);
 }
 
-
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -70,8 +68,6 @@ h2 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
@@ -108,9 +104,32 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
   }
 
   label {
       display: block;
+      font-weight: bold;
   }
+
+  #title {
+    font-weight: bold;
+    align-items: center;
+    margin-top: 5%;
+    color: white;
+    font-size: large;
+  }
+
+  #start-adventure {
+      justify-self: center;
+  }
+
+  #map-pic {
+      z-index: 0;
+      width: auto;
+      height:auto
+  }
+
+  /* #map-container {
+      background-image: url('../assets/ooo-map.jpg');
+      position: relative;
+  } */

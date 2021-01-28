@@ -8,6 +8,11 @@ form.addEventListener('submit', (e) => {
         name: formData.get('name'),
         descriptor: formData.get('descriptor'),
         completed: {},
+        lsp: 0,
+        bmo: 0,
+        treeTrunks: 0,
+        bubblegum: 0,
+        marceline: 0,
     };
 // Figure out alert later 
     // if (user.value) {
