@@ -49,23 +49,23 @@ const personalityQ = {
     choices: [{
         id: 'gentle',
         description: 'Gentle',
-        lsp: 1,
+        treeTrunks: 1,
     }, {
         id: 'smart',
         description: 'Smart',
-        bmo: 1,
+        bubblegum: 1,
     }, {
         id: 'fun',
         description: 'Fun',
-        treeTrunks: 1,
+        marceline: 1,
     }, {
         id: 'sassy',
         description: 'Sassy',
-        bubblegum: 1,
+        lsp: 1,
     }, {
         id: 'loyal',
         description: 'Loyal',
-        marceline: 1,
+        bmo: 1,
     }]
 };
 
