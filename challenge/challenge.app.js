@@ -50,22 +50,23 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    //     - get data
+    //get data
     const selectionId = formData.get('choices');
     const choice = findById(challenge.choices, selectionId);
     const user = JSON.parse(localStorage.getItem('USER'));
+    console.log(user);
 // Update Stats
-    user.lsp += choice.lsp,
-    user.bmo += choice.bmo,
-    user.treeTrunks += choice.treeTrunks,
-    user.bubblegum += choice.bubblegum,
-    user.marceline += choice.marceline,
+    if (choice.lsp) user.lsp += choice.lsp;
+    if (choice.bmo) user.bmo += choice.bmo;
+    if (choice.treeTrunks) user.treeTrunks += choice.treeTrunks;
+    if (choice.bubblegum) user.bubblegum += choice.bubblegum;
+    if (choice.marceline) user.marceline += choice.marceline;
 
-    // use the selectionId to set the property dynamically
+// use the selectionId to set the property dynamically
     user.completed[challenge.id] = true;
 
-    //     - Put the new stats in local storage
+//Put the new stats in local storage
     localStorage.setItem('USER', JSON.stringify(user));
-    //     - Send user back to map
+        // - Send user back to map
     window.location = '../map/index.html';
 });
