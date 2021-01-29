@@ -4,11 +4,11 @@ const colorQ = {
     title: 'Ice Kingdom',
     // Update this
     map: {
-        top: '10%',
+        top: '90%',
         left: '70%'
     },
     image: '../assets/ice-kingdom.png',
-    description: `Filler desc about needing scarves in the Ice Kingdom. Which color scarf do you choose?`,
+    description: `The Ice King invites you to his castle, but it's awfully cold in here! You break out your trusty scarf and mittens to fight the chill. Which color scarf do you wear?`,
     choices: [{
         id: 'purple',
         description: 'Purple!',

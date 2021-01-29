@@ -20,15 +20,17 @@ if (completedAllChallenges) {
 for (let challenge of challenges) {
 
     const li = document.createElement('li');
+    li.classList.add = 'map-link';
 
-    const a = document.createElement('a');
-    a.classList.add = 'challenge-link';
-    a.textContent = challenge.title;
-    a.href = `../challenge/?id=${challenge.id}`;
+
+    const link = document.createElement('a');
+    link.classList.add = 'challenge-link';
+    link.textContent = challenge.title;
+    link.href = `../challenge/?id=${challenge.id}`;
     
 // If they have completed the challenge, disable link and add strikethrough
 
-    li.append(a);
+    li.append(link);
 
     ul.append(li);
 }

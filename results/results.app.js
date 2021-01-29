@@ -9,10 +9,9 @@ const user = JSON.parse(localStorage.getItem('USER'));
 const resultId = getWinner(user);
 
 const result = findById(quizResults, resultId);
-console.log(result);
 
 const h1 = document.getElementById('results title');
-h1.textContent = `Mathematical! You are ${result.title}!`;
+h1.textContent = `Congrats ${user.name}, you are ${result.title}! Mathematical!`;
 
 const img = document.getElementById('results-img');
 img.src = result.image;

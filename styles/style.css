@@ -12,6 +12,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    
 }
 
 main {
@@ -52,6 +53,14 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -88,7 +97,7 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
+@keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
@@ -104,39 +113,45 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-  }
+}
 
-  label {
-      display: block;
-      font-weight: bold;
-  }
-
-  #title {
+label {
+    display: block;
     font-weight: bold;
-    align-items: center;
-    margin-top: 5%;
-    color: white;
-    font-size: large;
-  }
+}
 
-  #start-adventure {
-      justify-self: center;
-  }
+#title {
+font-weight: bold;
+align-items: center;
+margin-top: 5%;
+color: white;
+font-size: large;
+}
 
-  #map-pic {
-      z-index: 0;
-      width: 600px;
-      height: 600px;
-      position: relative;
-  }
+#start-adventure {
+    justify-self: center;
+}
 
-.challenge-link {
+.map-link {
     position: absolute;
 }
 
-  /* #map-container {
-      background-image: url('../assets/ooo-map.jpg');
-      position: relative;
-    height: 100%;
-    width: 100%;
-  } */
+#map-container {
+    background: url('../assets/ooo-map.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    width: 100%;    
+    overflow: hidden;
+    position: relative;
+}
+
+blockquote {
+    display: block;
+    font-size: large;
+    background-color: var(--color1);
+    padding: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
