@@ -1,15 +1,8 @@
 import challenges from '../quiz.data.js';
+import { findById } from '../utils.js';
 
 const params = new URLSearchParams(window.location.search);
 const challengeId = params.get('id');
-
-export function findById(array, id) {
-    for (let item of array) {
-        if (item.id === id) {
-            return item;
-        }
-    }
-}
 
 const challenge = findById(challenges, challengeId);
 
@@ -41,20 +34,18 @@ for (let choice of challenge.choices) {
 }
 
 const button = document.createElement('button');
-
 button.textContent = 'Submit';
-
 form.appendChild(button);
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    //get data
     const selectionId = formData.get('choices');
     const choice = findById(challenge.choices, selectionId);
+//get data
     const user = JSON.parse(localStorage.getItem('USER'));
-    console.log(user);
+
 // Update Stats
     if (choice.lsp) user.lsp += choice.lsp;
     if (choice.bmo) user.bmo += choice.bmo;
@@ -67,6 +58,6 @@ form.addEventListener('submit', (e) => {
 
 //Put the new stats in local storage
     localStorage.setItem('USER', JSON.stringify(user));
-        // - Send user back to map
+//Send user back to map
     window.location = '../map/index.html';
 });
