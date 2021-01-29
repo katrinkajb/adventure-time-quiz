@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <title>Adventure Time Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="./assets/logo.jpg"/>
+        </div>
+    </header>
+    <main>
+        <div id='title'>Welcome to the random character Adventure Time Quiz!</div>
+        <section class="main-section">
+            <form>
+                <label>
+                    What's your name?
+                    <input type='text' name='name'>
+                </label>
+                <label>
+                    Choose a descriptor:
+                    <input type='radio' name='descriptor' value='mathematical'>Mathematical
+                    <input type="radio" name='descriptor' value='frosty'>Frosty
+                    <input type="radio" name='descriptor' value='heroic'>Heroic
+                </label>
+                <button id='start-adventure'>Start Adventure!</button>
+            </form>
+        </section>
+        <img src='../assets/finn-n-jake.png' height="300px" width="300px">
+    </main>
+    <footer>
+        <div class="copy gutter-right">KB's Adventure Time Quiz</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
