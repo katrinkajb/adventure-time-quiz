@@ -4,8 +4,8 @@ const colorQ = {
     title: 'Ice Kingdom',
     // Update this
     map: {
-        top: '90%',
-        left: '70%'
+        top: '37%',
+        left: '55%'
     },
     image: '../assets/ice-kingdom.png',
     description: `The Ice King invites you to his castle, but it's awfully cold in here! You break out your trusty scarf and mittens to fight the chill. Which color scarf do you wear?`,
@@ -37,7 +37,7 @@ const personalityQ = {
     title: "Finn and Jake's Treehouse",
     // Update this
     map: {
-        top: '30%',
+        top: '45%',
         left: '44%'
     },
     image: '../assets/treehouse.jpg',
@@ -70,8 +70,8 @@ const likesQ = {
     title: 'Fire Kingdom',
     // Update this
     map: {
-        top: '89%',
-        left: '44%'
+        top: '61%',
+        left: '32%'
     },
     image: '../assets/fire-kingdom.png',
     description: `
@@ -105,12 +105,12 @@ const dislikesQ = {
     title: 'Castle Lemongrab',
     // Update this
     map: {
-        top: '89%',
-        left: '44%'
+        top: '44%',
+        left: '15%'
     },
     image: '../assets/castle-lemongrab.png',
     description: `
-        Lemongrab approaches you and demands to know what you hate. What do you find the most Unacceptable?
+        The Earl of Lemongrab approaches you and demands to know what you hate. What do you find the most Unacceptable?
     `,
     choices: [{
         id: 'sunlight',
@@ -140,8 +140,8 @@ const idealDayQ = {
     title: 'Candy Kingdom',
     // Update this
     map: {
-        top: '89%',
-        left: '44%'
+        top: '35%',
+        left: '35%'
     },
     image: '../assets/candy-kingdom.png',
     description: `The people of the Candy Kingdom decide to celebrate the day in your honor. Peppermint Butler says that you get to choose how everyone celebrates. How will you and spend your day?`,
