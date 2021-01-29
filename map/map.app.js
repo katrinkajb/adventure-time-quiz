@@ -1,4 +1,5 @@
 import challenges from '../quiz.data.js';
+import { toastFunction } from '../utils.js';
 
 const ul = document.getElementById('map-list');
     
@@ -18,17 +19,21 @@ if (completedAllChallenges) {
 }
 
 for (let challenge of challenges) {
-
     const li = document.createElement('li');
     li.classList.add = 'map-link';
-
-
+    
     const link = document.createElement('a');
-    link.classList.add = 'challenge-link';
+    // link.classList.add = 'challenge-link';
     link.textContent = challenge.title;
     link.href = `../challenge/?id=${challenge.id}`;
+
+    // If they have completed the challenge, disable link and give a message
+    if (user.completed[challenge.id] === true) {
+        // link.classList.add = 'completed-link';
+        link.href = '';
+        toastFunction();
+    }
     
-// If they have completed the challenge, disable link and add strikethrough
 
     li.append(link);
 

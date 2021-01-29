@@ -5,3 +5,10 @@ export function findById(array, id) {
         }
     }
 }
+
+export function toastFunction() {
+    const toastMsg = document.getElementById('toast');
+    toastMsg.className = 'show';
+    toastMsg.textContent = `You've already visited that location`;
+    setTimeout(function(){ toastMsg.className = toastMsg.className.replace('show', 'toast'); }, 3000);
+}
