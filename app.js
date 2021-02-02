@@ -6,7 +6,6 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
     const user = {
         name: formData.get('name'),
-        descriptor: formData.get('descriptor'),
         completed: {},
         lsp: 0,
         bmo: 0,
